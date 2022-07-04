@@ -6,8 +6,14 @@ let A_grades_div = document.getElementById("A-grades");
 let bonus_grades_div = document.getElementById("bonus-grades");
 let random_grade_div = document.getElementById("random-grade");
 
-
 function search() {
   let inputValue = document.getElementById("input").value;
-  
 }
+grades.pop();
+console.log(grades);
+grades.push(99);
+console.log(grades);
+
+grades.forEach((grade) => {
+  all_grades_div.innerHTML += `<span>${grade}</span>`;
+});
