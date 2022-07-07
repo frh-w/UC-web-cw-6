@@ -27,3 +27,8 @@ grades.forEach((grade) => {
 grades.forEach((grade) => {
   bonus_grades_div.innerHTML += `<span>${index}: ${grade}</span>`;
 });
+let randomIndex = Math.random(Math.random() * grades.length);
+
+grades.forEach((grade) => {
+  random_grade_div.innerHTML += `<span>${randomIndex}: ${grade[randomIndex]}</span>`;
+});
