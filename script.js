@@ -17,3 +17,13 @@ console.log(grades);
 grades.forEach((grade) => {
   all_grades_div.innerHTML += `<span>${grade}</span>`;
 });
+
+let curve = grades.map((grade) => grade + 3);
+let a_students = grades.filter((grades) => grades > 90);
+
+grades.forEach((grade) => {
+  A_grades_div.innerHTML += `<span>${grade}</span>`;
+});
+grades.forEach((grade) => {
+  bonus_grades_div.innerHTML += `<span>${index}: ${grade}</span>`;
+});
